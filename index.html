@@ -1,0 +1,525 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        #hero {
+            height: 100%;
+            width: 100%;
+            background: url(./image/h1_hero.jpg.webp);
+            background-size: cover;
+            object-fit: cover;
+            background-position: center;
+            padding: 200px 0;
+        }
+
+        .row,
+        .container {
+            height: 100%;
+        }
+
+        .container .row h3 {
+            color: #FF656A;
+        }
+
+
+
+        .container .row .btn {
+            background: #FF656A;
+            border-radius: 0;
+            border: none;
+            outline: none;
+            color: #ffffff;
+            padding: 10px 60px;
+        }
+
+        .shero .row .col-md-3 {
+            height: 400px;
+            width: 360px;
+
+
+        }
+
+        .shero {
+            margin: 100px 0;
+
+        }
+
+        .shero .row .box {
+            background: white;
+            border: 2px solid #FF656A;
+        }
+
+        .shero .row .box .line {
+            height: 5px;
+            width: 100px;
+            background: #FF656A;
+            margin: 30px 0;
+        }
+
+        .Chero .container .row .sbox {
+            height: 450px;
+            width: 600px;
+            background-color: white;
+            margin: 90px 0 20px 0;
+        }
+
+        .Chero .container .row .img {
+            height: 520px;
+            width: 550px;
+
+        }
+
+        .Dhero .row h1 {
+            font-size: 60px;
+            font-weight: 800;
+            margin: 90px 0;
+
+        }
+
+        .service .container .row .col-md-3 {
+            background-color: rgb(238, 238, 238);
+            height: 300px;
+            text-align: center;
+            margin: 50px 0 0 0;
+        }
+
+        .service .container .row .col-md-3 .d-flex {
+            height: 100%;
+        }
+
+        .tbox .mbox {
+            height: 400px;
+            width: 150px;
+            margin: 0 0 0 500px;
+
+        }
+
+        .tbox .mbox .btn {
+            background: #FF656A;
+            border-radius: 0;
+            border: none;
+            outline: none;
+            color: #ffffff;
+            padding: 10px 24px;
+        }
+
+        .cases .bbox {
+            width: 100%;
+            background-color: #F8FAFE;
+        }
+
+        .cases .bbox .col-md-4 h1 {
+            font-weight: 700px;
+            font-size: 50px;
+        }
+
+        .cases .bbox .col-md-4 p {
+            font-size: 19px;
+        }
+
+        .cases .bbox .btn {
+            background: #FF656A;
+            border-radius: 0;
+            border: none;
+            outline: none;
+            color: #ffffff;
+            padding: 10px 24px;
+        }
+
+        .path {
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .path i {
+            color: gold;
+        }
+
+        .path .container .col-md-7 .lbox {
+            font-size: 29px;
+        }
+
+        .ubox .container h1 {
+            font-size: 70px;
+            font-weight: 700;
+        }
+
+        .news .container .vbox .col-md-3 {
+            width: 360px;
+        }
+
+        .back {
+            background-color: #002D5B;
+            padding: 100px 0;
+        }
+
+        .back .container {
+            color: #ffffff !important;
+            font-size: 20px;
+        }
+
+        .back .container .row .col-md-6 .input-text {
+            height: 60px;
+            width: 200px;
+            background-color: #002D5B;
+            color: #ffffff !important;
+        }
+
+        .back .container .row .col-md-6 .input-text1 {
+            height: 60px;
+            width: 300px;
+            background-color: #002D5B;
+            color: #ffffff !important;
+
+        }
+
+        .container .row .col-md-3 i {
+            margin: 8px;
+        }
+
+        .container .row .col-md-2 h4 {
+            color: #002D5B;
+            font-size: 27px;
+        }
+
+        .container .row .col-md-2 li {
+            font-size: 17px;
+            margin: 10px 0;
+
+        }
+
+
+
+        ul {
+            padding-left: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        footer .container .row .col-md-2 {
+            width: 200px !important;
+        }
+
+        @media screen and (max-width:768px) {
+
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6,
+            p,
+            button,
+            .btn,
+            .btn-lg {
+                text-align: center;
+            }
+
+            footer .container .row .col-md-2 {
+                text-align: center;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <section id="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-7">
+                    <h3 class="fs-5">Welcome to Buson</h3>
+                    <h1 class="display-1 fw-bold">We help you <br> to grow your <br> business</h1>
+                    <button class="btn btn-outline-primary btn-lg">Learn More</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="shero">
+
+        <div class="row w-100 justify-content-center align-items-center">
+            <div class="col-md-3 m-2">
+                <img src="./image/team_1.jpg.webp" class="img-fluid my " alt="">
+                <h2 class="fs-3 my-3">Business Planning</h2>
+                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut
+                    labore .</p>
+            </div>
+
+            <div class="col-md-3 m-2">
+                <img src="./image/team_2.jpg.webp" class="img-fluid" alt="">
+                <h2 class="fs-3 my-3">Financial Projections</h2>
+                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut
+                    labore .</p>
+            </div>
+
+            <div class="col-md-3 box m-2">
+                <h1 class="fw-bold">What we do <br> for you</h1>
+                <div class="line"></div>
+                <p class="fs-5 text-muted">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore smod tem magna
+                    aliqua. Ut enim.</p>
+
+                <button class="btn my-3 text-muted">View Profile </button>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="Chero">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+
+                <div class="col-md-5">
+                    <img src="./image/wetrusted.jpg.webp" class="img" alt="">
+                </div>
+                <div class="col-md-5 sbox">
+                    <h1 class="fw-bold m-5">We are more trusted <br> then 5000 clients</h1>
+                    <p class="text-muted m-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostru dolor sit amet, consectetur
+                        adipn</p>
+                    <button class="btn btn-outline-primary btn-lg">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="Dhero">
+        <h1 class="text-center">Our Services </h1>
+    </section>
+
+
+    <section class="service">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-3 mx-4">
+                    <div class="d-flex justify-content-center align-items-center flex-column">
+                        <img src="./image/planning.png" height="60" alt="">
+                        <h3 class="fw-bold">Strategic Planning</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mx-4">
+                    <div class="d-flex justify-content-center align-items-center flex-column">
+                        <img src="./image/profit.png" height="80" alt="">
+                        <h3 class="fw-bold">Trades & stocks</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mx-4">
+                    <div class="d-flex justify-content-center align-items-center flex-column">
+                        <img src="./image/search.png" height="80" alt="">
+                        <h3 class="fw-bold">Audit & Assurance</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="tbox">
+        <div class="mbox row justify-content-center align-items-center">
+            <button class="btn btn-outline-primary btn-lg">Learn More</button>
+        </div>
+
+    </section>
+
+
+    <section class="cases">
+        <div class="row bbox justify-content-center align-items-center w-100">
+            <div class="col-md-4 ">
+                <h1 class="fw-bold">Completed <br>Cases</h1>
+                <p class="text-muted my-3">Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit, sed do<br>
+                    eiusmod tempor incididunt ut labore
+                    et<br> dolore magna ali quUt enim ad minim <br>veniam. quis nostrud exercitation<br> ullamco laboris
+                    nierci si
+                    ut.
+                </p>
+                <button class="btn btn-outline-primary btn-lg my-3">See More</button>
+
+            </div>
+            <div class="col-md-4">
+                <img src="./image/completed_case_1.png.webp" class="img-fluid" alt="">
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="path mt-5">
+        <div class="container">
+            <div class="row bbox justify-content-center align-items-center w-100">
+                <div class="col-md-7 text-center">
+
+                    <img src="./image/testimonial.png.webp" height="150" class="img" alt="">
+                    <p class="text-dark my-3 lbox">You can’t succeed if you just do what others do and
+                        follow the well-worn path. You need to create a new and
+                        original path for yourself. </p>
+
+                    <p class=" my-3"><i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </p>
+                    <h3 class="text-dark">Clifform Flazier - <span>Colorlib Themes</span></h3>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="ubox">
+        <div class="container">
+            <h1 class="text-center my-4">Our Recent News</h1>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="news">
+        <div class="container">
+            <div class="row vbox justify-content-center align-items-center w-100">
+                <div class="col-md-3">
+                    <img src="./image/rcent_1.png.webp" class="img-fluid my-3" alt="">
+                    <div class="p-4">
+                        <h6>Business planing</h6>
+                        <h4>Amazing Place to <br> visit in summer</h4>
+                        <p class="text-muted">Nov 30, 2020</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <img src="./image/rcent_2.png.webp" class="img-fluid my-3" alt="">
+                    <div class="p-4">
+                        <h6>Audit</h6>
+                        <h4>Amazing Place to <br> visit in summer</h4>
+                        <p class="text-muted">Nov 30, 2020</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <img src="./image/rcent_3.png.webp" class="img-fluid my-3" alt="">
+                    <div class="p-4">
+                        <h6>Business planing</h6>
+                        <h4>Amazing Place to <br> visit in summer</h4>
+                        <p class="text-muted">Nov 30, 2020</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <section class="back">
+        <div class="container">
+            <div class="row justify-content-center align-items-center w-100">
+                <div class="col-md-4">
+                    <h1 class="display-6 fw-bold">Request for Call<br> Back</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur<br> adipisicing elit, sed do eiusmod
+                        tempor<br>sincididunt ut
+                        labore,</p>
+
+                </div>
+                <div class="col-md-6">
+                    <div>
+                        <input type="text" class="input-text mt-2" placeholder="Name">
+                        <input type="text" class="input-text mt-2" placeholder="Phone">
+                    </div>
+
+
+                    <div>
+                        <select name="Services" class="input-text1 mt-4" id="">
+                            <option value="">Services-1</option>
+                            <option value="">Services-2</option>
+                            <option value="">Services-3</option>
+                        </select>
+                        <button class="btn m-3 ronded">send</button>
+                    </div>
+
+                </div>
+            </div>
+
+    </section>
+
+    <footer class="mt-5">
+        <div class="container">
+            <div class="row justify-content-center align-items-center my-5">
+                <div class="col-md-3 text-center">
+                    <img src="./image/logo2_footer.png.webp" class="my-2" alt="">
+                    <p class="text-muted fs-5 my-3">Lorem ipsum dolor sit<br> amet, adipiscing elit, <br> sed do eiusmod
+                    </p>
+                    <div class="text-center text-danger">
+                        <i class="fa-brands fa-facebook fs-3"></i>
+                        <i class="fa-brands fa-square-twitter fs-3"></i>
+                        <i class="fa-brands fa-linkedin fs-3"></i>
+                        <i class="fa-brands fa-pinterest fs-3"></i>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <h4>Company</h4>
+                    <ul>
+                        <li>Home</li>
+                        <li>About us</li>
+                        <li>Services</li>
+                        <li>Cases</li>
+                        <li>Contact us</li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h4>Services</h4>
+                    <ul>
+                        <li>CommercialCleaning</li>
+                        <li>Office Cleaning</li>
+                        <li>Bulding Cleaning</li>
+                        <li>Floor Cleaning</li>
+                        <li>ApartmentCleaning</li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h4>Get in touch</h4>
+                    <ul>
+                        <li>152-515-6565</li>
+                        <li>Damomail@gmail.com</li>
+                        <li>New orleans,USA</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
